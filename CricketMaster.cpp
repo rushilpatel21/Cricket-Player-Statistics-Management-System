@@ -925,61 +925,11 @@ void saveDatasetToJson() {
         ListNode* current = it.second;
         while (current != nullptr) {
             game g = current->g;
-            addinfoToJson(datasetJson,it.first,g.matchDate,g.runScore,g.wicketTaken,g.roleInTeam,g.playerTeam,g.oppTeam,g.playerFirstName);
+            addinfoToJson(datasetJson,it.first,g.matchDate,g.runScore,g.wicketTaken,g.roleInTeam,g.playerTeam,g.oppTeam,g.playerFirstName); // This will help load/save the data set in the json file;
             current = current->next;
         }
     }
-    
-    // addinfoToJson(datasetJson,"ravi", "01/01/2023", 50, 2, "batsman", "India", "Pakistan", "Ravi");
-    // addinfoToJson(datasetJson,"ravi", "01/03/2023", 60, 3, "batsman", "India", "Australia", "Ravi");
-    // addinfoToJson(datasetJson,"ravi", "13/02/2023", 550, 2, "bowler", "India", "Australia", "Ravi");
 
-    // addinfoToJson(datasetJson,"neha", "01/01/2023", 30, 1, "batsman", "India", "Pakistan", "Neha");
-    // addinfoToJson(datasetJson,"neha", "11/01/2023", 12, 2, "batsman", "India", "Australia", "Neha");
-    // addinfoToJson(datasetJson,"neha", "03/03/2023", 23, 2, "batsman", "India", "Pakistan", "Neha");
-
-    // addinfoToJson(datasetJson,"amit", "01/01/2023", 20, 3, "bowler", "India", "Pakistan", "Amit");
-    // addinfoToJson(datasetJson,"amit", "01/02/2023", 48, 0, "batsman", "Pakistan", "Australia", "Amit");
-    // addinfoToJson(datasetJson,"amit", "01/02/2023", 23, 1, "bowler", "Australia", "England", "Amit");
-
-    // addinfoToJson(datasetJson,"kiran", "01/01/2023", 15, 2, "batsman", "Pakistan", "India", "Kiran");
-    // addinfoToJson(datasetJson,"kiran", "01/03/2023", 10, 1, "batsman", "Australia", "India", "Kiran");
-    // addinfoToJson(datasetJson,"kiran", "02/02/2023", 122, 2, "batsman", "India", "England", "Kiran");
-
-    // addinfoToJson(datasetJson,"arun", "01/02/2023", 45, 0, "batsman", "India", "England", "Arun");
-    // addinfoToJson(datasetJson,"arun", "02/02/2023", 49, 6, "batsman", "India", "England", "Arun");
-    // addinfoToJson(datasetJson,"arun", "05/02/2023", 60, 5, "batsman", "India", "England", "Arun");
-
-    // addinfoToJson(datasetJson,"saloni", "01/02/2023", 25, 2, "bowler", "India", "England", "Saloni");
-    // addinfoToJson(datasetJson,"saloni", "03/02/2023", 55, 2, "bowler", "India", "Australia", "Saloni");
-    // addinfoToJson(datasetJson,"saloni", "02/02/2023", 205, 2, "bowler", "India", "Pakistan", "Saloni");
-
-    // addinfoToJson(datasetJson,"david", "01/02/2023", 35, 0, "batsman", "England", "India", "David");
-    // addinfoToJson(datasetJson,"david", "11/02/2023", 30, 0, "batsman", "England", "India", "David");
-    // addinfoToJson(datasetJson,"david", "04/05/2023", 75, 0, "batsman", "England", "India", "David");
-
-    // addinfoToJson(datasetJson,"akshay", "01/01/2023", 40, 2, "batsman", "Pakistan", "India", "Akshay");
-    // addinfoToJson(datasetJson,"akshay", "01/03/2023", 65, 3, "batsman", "Australia", "Pakistan", "Akshay");
-    // addinfoToJson(datasetJson,"akshay", "01/11/2023", 49, 2, "batsman", "Pakistan", "India", "Akshay");
-
-    // addinfoToJson(datasetJson,"priya", "01/01/2023", 28, 1, "batsman", "England", "India", "Priya");
-    // addinfoToJson(datasetJson,"priya", "11/03/2023", 48, 5, "batsman", "Pakistan", "Australia", "Priya");
-    // addinfoToJson(datasetJson,"priya", "01/07/2023", 85, 9, "batsman", "Pakistan", "Australia", "Priya");
-
-    // addinfoToJson(datasetJson,"olivia", "01/02/2023", 23, 1, "bowler", "Australia", "England", "Olivia");
-    // addinfoToJson(datasetJson,"olivia", "01/06/2023", 103, 4, "bowler", "Australia", "England", "Olivia");
-    // addinfoToJson(datasetJson,"olivia", "11/02/2023", 203, 6, "bowler", "Australia", "England", "Olivia");
-
-    // addinfoToJson(datasetJson,"rushil", "01/02/2023", 33, 0, "batsman", "England", "Australia", "Rushil");
-    // addinfoToJson(datasetJson,"rushil", "02/02/2023", 200, 0, "batsman", "England", "New Zealand", "Rushil");
-    // addinfoToJson(datasetJson,"rushil", "03/02/2023", 303, 0, "batsman", "England", "India", "Rushil");
-
-    // addinfoToJson(datasetJson,"siddh", "13/02/2023", 550, 2, "bowler", "India", "Australia", "Siddh");
-    // addinfoToJson(datasetJson,"siddh", "23/02/2023", 122, 2, "bowler", "India", "England", "Siddh");
-    // addinfoToJson(datasetJson,"siddh", "03/03/2023", 23, 2, "bowler", "India", "Pakistan", "Siddh");
-    
-
-    
     ofstream jsonFile("dataset.json");
     jsonFile << std::setw(4) << datasetJson;  
     jsonFile.close();
@@ -1002,65 +952,12 @@ void loadDatasetFromJson() {
         string player = playerEntry["player"];
 
         
-        addinfo(name,date,score,wickets,role,team1,team2,player);
+        addinfo(name,date,score,wickets,role,team1,team2,player); // This will load data set in the map in the running code
     }
 }
 
-void dataset(){
-    addinfo("ravi", "01/01/2023", 50, 2, "batsman", "India", "Pakistan", "Ravi");
-    addinfo("ravi", "01/03/2023", 60, 3, "batsman", "India", "Australia", "Ravi");
-    addinfo("ravi", "13/02/2023", 550, 2, "bowler", "India", "Australia", "Ravi");
-
-    addinfo("neha", "01/01/2023", 30, 1, "batsman", "India", "Pakistan", "Neha");
-    addinfo("neha", "11/01/2023", 12, 2, "batsman", "India", "Australia", "Neha");
-    addinfo("neha", "03/03/2023", 23, 2, "batsman", "India", "Pakistan", "Neha");
-
-    addinfo("amit", "01/01/2023", 20, 3, "bowler", "India", "Pakistan", "Amit");
-    addinfo("amit", "01/02/2023", 48, 0, "batsman", "Pakistan", "Australia", "Amit");
-    addinfo("amit", "01/02/2023", 23, 1, "bowler", "Australia", "England", "Amit");
-
-    addinfo("kiran", "01/01/2023", 15, 2, "batsman", "Pakistan", "India", "Kiran");
-    addinfo("kiran", "01/03/2023", 10, 1, "batsman", "Australia", "India", "Kiran");
-    addinfo("kiran", "02/02/2023", 122, 2, "batsman", "India", "England", "Kiran");
-
-    addinfo("arun", "01/02/2023", 45, 0, "batsman", "India", "England", "Arun");
-    addinfo("arun", "02/02/2023", 49, 6, "batsman", "India", "England", "Arun");
-    addinfo("arun", "05/02/2023", 60, 5, "batsman", "India", "England", "Arun");
-
-    addinfo("saloni", "01/02/2023", 25, 2, "bowler", "India", "England", "Saloni");
-    addinfo("saloni", "03/02/2023", 55, 2, "bowler", "India", "Australia", "Saloni");
-    addinfo("saloni", "02/02/2023", 205, 2, "bowler", "India", "Pakistan", "Saloni");
-
-    addinfo("david", "01/02/2023", 35, 0, "batsman", "England", "India", "David");
-    addinfo("david", "11/02/2023", 30, 0, "batsman", "England", "India", "David");
-    addinfo("david", "04/05/2023", 75, 0, "batsman", "England", "India", "David");
-
-    addinfo("akshay", "01/01/2023", 40, 2, "batsman", "Pakistan", "India", "Akshay");
-    addinfo("akshay", "01/03/2023", 65, 3, "batsman", "Australia", "Pakistan", "Akshay");
-    addinfo("akshay", "01/11/2023", 49, 2, "batsman", "Pakistan", "India", "Akshay");
-
-    addinfo("priya", "01/01/2023", 28, 1, "batsman", "England", "India", "Priya");
-    addinfo("priya", "11/03/2023", 48, 5, "batsman", "Pakistan", "Australia", "Priya");
-    addinfo("priya", "01/07/2023", 85, 9, "batsman", "Pakistan", "Australia", "Priya");
-
-    addinfo("olivia", "01/02/2023", 23, 1, "bowler", "Australia", "England", "Olivia");
-    addinfo("olivia", "01/06/2023", 103, 4, "bowler", "Australia", "England", "Olivia");
-    addinfo("olivia", "11/02/2023", 203, 6, "bowler", "Australia", "England", "Olivia");
-
-    addinfo("rushil", "01/02/2023", 33, 0, "batsman", "England", "Australia", "Rushil");
-    addinfo("rushil", "02/02/2023", 200, 0, "batsman", "England", "New Zealand", "Rushil");
-    addinfo("rushil", "03/02/2023", 303, 0, "batsman", "England", "India", "Rushil");
-
-    addinfo("siddh", "13/02/2023", 550, 2, "bowler", "India", "Australia", "Siddh");
-    addinfo("siddh", "23/02/2023", 122, 2, "bowler", "India", "England", "Siddh");
-    addinfo("siddh", "03/03/2023", 23, 2, "bowler", "India", "Pakistan", "Siddh");
-
-}
 
 int main(){
-
-    // dataset();
-
     
     loadDatasetFromJson();
 
