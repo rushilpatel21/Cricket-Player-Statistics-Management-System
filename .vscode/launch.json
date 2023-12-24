@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/rushi/OneDrive/Desktop/IMP PDFs/SEM - 3/DSA/Assignment/DSA_1(assignment)",
-      "program": "c:/Users/rushi/OneDrive/Desktop/IMP PDFs/SEM - 3/DSA/Assignment/DSA_1(assignment)/build/Debug/outDebug",
+      "cwd": "c:/Users/rushi/OneDrive/Desktop/IMP PDFs/GitHub/Cricket-Master/Cricket-Master",
+      "program": "c:/Users/rushi/OneDrive/Desktop/IMP PDFs/GitHub/Cricket-Master/Cricket-Master/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

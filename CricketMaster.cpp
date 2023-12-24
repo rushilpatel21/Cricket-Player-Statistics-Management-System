@@ -986,7 +986,7 @@ void saveDatasetToJson() {
 }
 
 void loadDatasetFromJson() {
-    std::ifstream inputFile("dataset.json");
+    ifstream inputFile("dataset.json");
     json datasetJson;
     inputFile >> datasetJson;
     inputFile.close();
