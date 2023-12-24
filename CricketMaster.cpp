@@ -14,7 +14,7 @@ struct game{
     string playerTeam;
     string oppTeam;
 };
-
+//trial commit from vscode 
 struct ListNode{
     game g;
     ListNode* prev;
