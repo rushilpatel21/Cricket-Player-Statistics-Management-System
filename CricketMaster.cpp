@@ -902,7 +902,6 @@ void number8() {
 
 void addinfoToJson(json& datasetJson, const std::string& name, const std::string& date, int score, int wickets,
                    const std::string& role, const std::string& team1, const std::string& team2, const std::string& player) {
-    // Create a JSON object for each player entry
     json playerJson = {
         {"name", name},
         {"date", date},
@@ -914,13 +913,11 @@ void addinfoToJson(json& datasetJson, const std::string& name, const std::string
         {"player", player}
     };
 
-    // Add the player entry to the dataset JSON array
     datasetJson.push_back(playerJson);
 }
 
 
 void saveDatasetToJson() {
-    // Create a JSON array to store player information
     json datasetJson;
 
 
@@ -982,20 +979,18 @@ void saveDatasetToJson() {
     // addinfoToJson(datasetJson,"siddh", "03/03/2023", 23, 2, "bowler", "India", "Pakistan", "Siddh");
     
 
-    // Write JSON to a file
-    std::ofstream jsonFile("dataset.json");
-    jsonFile << std::setw(4) << datasetJson;  // Pretty print with indentation
+    
+    ofstream jsonFile("dataset.json");
+    jsonFile << std::setw(4) << datasetJson;  
     jsonFile.close();
 }
 
 void loadDatasetFromJson() {
-    // Read JSON from a file
     std::ifstream inputFile("dataset.json");
     json datasetJson;
     inputFile >> datasetJson;
     inputFile.close();
 
-    // Iterate through the JSON array and process each player entry
     for (const auto& playerEntry : datasetJson) {
         string name = playerEntry["name"];
         string date = playerEntry["date"];
@@ -1006,8 +1001,7 @@ void loadDatasetFromJson() {
         string team2 = playerEntry["team2"];
         string player = playerEntry["player"];
 
-        // Process the player information as needed
-        // Example: Print the information
+        
         addinfo(name,date,score,wickets,role,team1,team2,player);
     }
 }
