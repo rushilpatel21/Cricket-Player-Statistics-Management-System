@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
-#define endl "\n"
+#include <fstream>
+#include "json.hpp"
 
+#define endl "\n"
+using json = nlohmann::json; 
 using namespace std;
 
 int nameWidth = 15; 
@@ -896,6 +899,119 @@ void number8() {
         number8();
     }
 }
+
+void addinfoToJson(json& datasetJson, const std::string& name, const std::string& date, int score, int wickets,
+                   const std::string& role, const std::string& team1, const std::string& team2, const std::string& player) {
+    // Create a JSON object for each player entry
+    json playerJson = {
+        {"name", name},
+        {"date", date},
+        {"score", score},
+        {"wickets", wickets},
+        {"role", role},
+        {"team1", team1},
+        {"team2", team2},
+        {"player", player}
+    };
+
+    // Add the player entry to the dataset JSON array
+    datasetJson.push_back(playerJson);
+}
+
+
+void saveDatasetToJson() {
+    // Create a JSON array to store player information
+    json datasetJson;
+
+
+    for(auto it : m){
+        ListNode* current = it.second;
+        while (current != nullptr) {
+            game g = current->g;
+            addinfoToJson(datasetJson,it.first,g.matchDate,g.runScore,g.wicketTaken,g.roleInTeam,g.playerTeam,g.oppTeam,g.playerFirstName);
+            current = current->next;
+        }
+    }
+    
+    // addinfoToJson(datasetJson,"ravi", "01/01/2023", 50, 2, "batsman", "India", "Pakistan", "Ravi");
+    // addinfoToJson(datasetJson,"ravi", "01/03/2023", 60, 3, "batsman", "India", "Australia", "Ravi");
+    // addinfoToJson(datasetJson,"ravi", "13/02/2023", 550, 2, "bowler", "India", "Australia", "Ravi");
+
+    // addinfoToJson(datasetJson,"neha", "01/01/2023", 30, 1, "batsman", "India", "Pakistan", "Neha");
+    // addinfoToJson(datasetJson,"neha", "11/01/2023", 12, 2, "batsman", "India", "Australia", "Neha");
+    // addinfoToJson(datasetJson,"neha", "03/03/2023", 23, 2, "batsman", "India", "Pakistan", "Neha");
+
+    // addinfoToJson(datasetJson,"amit", "01/01/2023", 20, 3, "bowler", "India", "Pakistan", "Amit");
+    // addinfoToJson(datasetJson,"amit", "01/02/2023", 48, 0, "batsman", "Pakistan", "Australia", "Amit");
+    // addinfoToJson(datasetJson,"amit", "01/02/2023", 23, 1, "bowler", "Australia", "England", "Amit");
+
+    // addinfoToJson(datasetJson,"kiran", "01/01/2023", 15, 2, "batsman", "Pakistan", "India", "Kiran");
+    // addinfoToJson(datasetJson,"kiran", "01/03/2023", 10, 1, "batsman", "Australia", "India", "Kiran");
+    // addinfoToJson(datasetJson,"kiran", "02/02/2023", 122, 2, "batsman", "India", "England", "Kiran");
+
+    // addinfoToJson(datasetJson,"arun", "01/02/2023", 45, 0, "batsman", "India", "England", "Arun");
+    // addinfoToJson(datasetJson,"arun", "02/02/2023", 49, 6, "batsman", "India", "England", "Arun");
+    // addinfoToJson(datasetJson,"arun", "05/02/2023", 60, 5, "batsman", "India", "England", "Arun");
+
+    // addinfoToJson(datasetJson,"saloni", "01/02/2023", 25, 2, "bowler", "India", "England", "Saloni");
+    // addinfoToJson(datasetJson,"saloni", "03/02/2023", 55, 2, "bowler", "India", "Australia", "Saloni");
+    // addinfoToJson(datasetJson,"saloni", "02/02/2023", 205, 2, "bowler", "India", "Pakistan", "Saloni");
+
+    // addinfoToJson(datasetJson,"david", "01/02/2023", 35, 0, "batsman", "England", "India", "David");
+    // addinfoToJson(datasetJson,"david", "11/02/2023", 30, 0, "batsman", "England", "India", "David");
+    // addinfoToJson(datasetJson,"david", "04/05/2023", 75, 0, "batsman", "England", "India", "David");
+
+    // addinfoToJson(datasetJson,"akshay", "01/01/2023", 40, 2, "batsman", "Pakistan", "India", "Akshay");
+    // addinfoToJson(datasetJson,"akshay", "01/03/2023", 65, 3, "batsman", "Australia", "Pakistan", "Akshay");
+    // addinfoToJson(datasetJson,"akshay", "01/11/2023", 49, 2, "batsman", "Pakistan", "India", "Akshay");
+
+    // addinfoToJson(datasetJson,"priya", "01/01/2023", 28, 1, "batsman", "England", "India", "Priya");
+    // addinfoToJson(datasetJson,"priya", "11/03/2023", 48, 5, "batsman", "Pakistan", "Australia", "Priya");
+    // addinfoToJson(datasetJson,"priya", "01/07/2023", 85, 9, "batsman", "Pakistan", "Australia", "Priya");
+
+    // addinfoToJson(datasetJson,"olivia", "01/02/2023", 23, 1, "bowler", "Australia", "England", "Olivia");
+    // addinfoToJson(datasetJson,"olivia", "01/06/2023", 103, 4, "bowler", "Australia", "England", "Olivia");
+    // addinfoToJson(datasetJson,"olivia", "11/02/2023", 203, 6, "bowler", "Australia", "England", "Olivia");
+
+    // addinfoToJson(datasetJson,"rushil", "01/02/2023", 33, 0, "batsman", "England", "Australia", "Rushil");
+    // addinfoToJson(datasetJson,"rushil", "02/02/2023", 200, 0, "batsman", "England", "New Zealand", "Rushil");
+    // addinfoToJson(datasetJson,"rushil", "03/02/2023", 303, 0, "batsman", "England", "India", "Rushil");
+
+    // addinfoToJson(datasetJson,"siddh", "13/02/2023", 550, 2, "bowler", "India", "Australia", "Siddh");
+    // addinfoToJson(datasetJson,"siddh", "23/02/2023", 122, 2, "bowler", "India", "England", "Siddh");
+    // addinfoToJson(datasetJson,"siddh", "03/03/2023", 23, 2, "bowler", "India", "Pakistan", "Siddh");
+    
+
+    // Write JSON to a file
+    std::ofstream jsonFile("dataset.json");
+    jsonFile << std::setw(4) << datasetJson;  // Pretty print with indentation
+    jsonFile.close();
+}
+
+void loadDatasetFromJson() {
+    // Read JSON from a file
+    std::ifstream inputFile("dataset.json");
+    json datasetJson;
+    inputFile >> datasetJson;
+    inputFile.close();
+
+    // Iterate through the JSON array and process each player entry
+    for (const auto& playerEntry : datasetJson) {
+        string name = playerEntry["name"];
+        string date = playerEntry["date"];
+        int score = playerEntry["score"];
+        int wickets = playerEntry["wickets"];
+        string role = playerEntry["role"];
+        string team1 = playerEntry["team1"];
+        string team2 = playerEntry["team2"];
+        string player = playerEntry["player"];
+
+        // Process the player information as needed
+        // Example: Print the information
+        addinfo(name,date,score,wickets,role,team1,team2,player);
+    }
+}
+
 void dataset(){
     addinfo("ravi", "01/01/2023", 50, 2, "batsman", "India", "Pakistan", "Ravi");
     addinfo("ravi", "01/03/2023", 60, 3, "batsman", "India", "Australia", "Ravi");
@@ -949,13 +1065,16 @@ void dataset(){
 
 int main(){
 
-    dataset();
+    // dataset();
+
+    
+    loadDatasetFromJson();
 
     while(1){
         
         cout << endl;
         cout << "   Selection Menu"<<endl;
-        cout << "1 \tAdd Match Information \n2 \tDisplay Match Information \n3 \tDisplay player-wise maximum run scored \n4 \tDisplay top bowlers (using total run) and top batsmans (using total wickets)\n5 \tTo delete player information\n6 \tTo Display Average Runs and Wickets\n7 \tTo Display number of Top players who scored the most centuries and half-centuries\n8 \tTo display histogram representation of Runs and Wickets Per Player \n0 \tTo exit the program " << endl<<endl;
+        cout << "1 \tAdd Match Information \n2 \tDisplay Match Information \n3 \tDisplay player-wise maximum run scored \n4 \tDisplay top bowlers (using total run) and top batsmans (using total wickets)\n5 \tTo delete player information\n6 \tTo Display Average Runs and Wickets\n7 \tTo Display number of Top players who scored the most centuries and half-centuries\n8 \tTo display histogram representation of Runs and Wickets Per Player\n9 \tTo save Data Set to the Json File \n0 \tTo exit the program " << endl<<endl;
         cout << "Enter the value: ";
 
         string num;
@@ -965,6 +1084,7 @@ int main(){
             break;
         }else if(num=="1"){
             number1();
+            saveDatasetToJson();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }else if(num=="2"){
             number2(); 
@@ -977,6 +1097,7 @@ int main(){
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }else if(num == "5"){
             number5();
+            saveDatasetToJson();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }else if(num == "6"){
             number6();
@@ -987,6 +1108,10 @@ int main(){
         }else if(num == "8"){
             number8();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }else if(num == "9"){
+            saveDatasetToJson();
+            cout << "Data Set Saved to Json file" << endl;
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }else{
             cout << "Enter a valid input." << endl;
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -994,6 +1119,7 @@ int main(){
         }
     }
     cout << endl;
+    saveDatasetToJson();
     cout << "Successfully exited the program." << endl;
     cout << endl;
 
