@@ -10,61 +10,21 @@
         "wickets": 2
     },
     {
-        "date": "12/10/2023",
-        "name": "yashvi",
-        "player": "Yashvi",
-        "role": "bowler",
-        "score": 10,
-        "team1": "Pakistan",
-        "team2": "India",
-        "wickets": 2
-    },
-    {
-        "date": "12/12/2023",
-        "name": "rudra",
-        "player": "Rudra",
-        "role": "bowler",
-        "score": 10,
-        "team1": "Pakistan",
+        "date": "04/05/2023",
+        "name": "david",
+        "player": "David",
+        "role": "batsman",
+        "score": 75,
+        "team1": "England",
         "team2": "India",
         "wickets": 0
     },
     {
-        "date": "12/10/2023",
-        "name": "rushil",
-        "player": "Rushil",
+        "date": "11/02/2023",
+        "name": "david",
+        "player": "David",
         "role": "batsman",
-        "score": 100,
-        "team1": "India",
-        "team2": "Pakistan",
-        "wickets": 1
-    },
-    {
-        "date": "01/02/2023",
-        "name": "rushil",
-        "player": "Rushil",
-        "role": "batsman",
-        "score": 33,
-        "team1": "England",
-        "team2": "Australia",
-        "wickets": 0
-    },
-    {
-        "date": "02/02/2023",
-        "name": "rushil",
-        "player": "Rushil",
-        "role": "batsman",
-        "score": 200,
-        "team1": "England",
-        "team2": "New Zealand",
-        "wickets": 0
-    },
-    {
-        "date": "03/02/2023",
-        "name": "rushil",
-        "player": "Rushil",
-        "role": "batsman",
-        "score": 303,
+        "score": 30,
         "team1": "England",
         "team2": "India",
         "wickets": 0
@@ -80,163 +40,23 @@
         "wickets": 0
     },
     {
-        "date": "11/02/2023",
-        "name": "david",
-        "player": "David",
-        "role": "batsman",
-        "score": 30,
-        "team1": "England",
-        "team2": "India",
-        "wickets": 0
-    },
-    {
-        "date": "04/05/2023",
-        "name": "david",
-        "player": "David",
-        "role": "batsman",
-        "score": 75,
-        "team1": "England",
-        "team2": "India",
-        "wickets": 0
-    },
-    {
-        "date": "01/02/2023",
-        "name": "arun",
-        "player": "Arun",
-        "role": "batsman",
-        "score": 45,
-        "team1": "India",
-        "team2": "England",
-        "wickets": 0
-    },
-    {
-        "date": "02/02/2023",
-        "name": "arun",
-        "player": "Arun",
-        "role": "batsman",
-        "score": 49,
-        "team1": "India",
-        "team2": "England",
-        "wickets": 6
-    },
-    {
-        "date": "05/02/2023",
-        "name": "arun",
-        "player": "Arun",
-        "role": "batsman",
-        "score": 60,
-        "team1": "India",
-        "team2": "England",
-        "wickets": 5
-    },
-    {
-        "date": "01/01/2023",
-        "name": "kiran",
-        "player": "Kiran",
-        "role": "batsman",
-        "score": 15,
+        "date": "12/10/2023",
+        "name": "yashvi",
+        "player": "Yashvi",
+        "role": "bowler",
+        "score": 10,
         "team1": "Pakistan",
         "team2": "India",
-        "wickets": 2
-    },
-    {
-        "date": "01/03/2023",
-        "name": "kiran",
-        "player": "Kiran",
-        "role": "batsman",
-        "score": 10,
-        "team1": "Australia",
-        "team2": "India",
-        "wickets": 1
-    },
-    {
-        "date": "02/02/2023",
-        "name": "kiran",
-        "player": "Kiran",
-        "role": "batsman",
-        "score": 122,
-        "team1": "India",
-        "team2": "England",
-        "wickets": 2
-    },
-    {
-        "date": "01/02/2023",
-        "name": "olivia",
-        "player": "Olivia",
-        "role": "bowler",
-        "score": 23,
-        "team1": "Australia",
-        "team2": "England",
-        "wickets": 1
-    },
-    {
-        "date": "01/06/2023",
-        "name": "olivia",
-        "player": "Olivia",
-        "role": "bowler",
-        "score": 103,
-        "team1": "Australia",
-        "team2": "England",
-        "wickets": 4
-    },
-    {
-        "date": "11/02/2023",
-        "name": "olivia",
-        "player": "Olivia",
-        "role": "bowler",
-        "score": 203,
-        "team1": "Australia",
-        "team2": "England",
-        "wickets": 6
-    },
-    {
-        "date": "01/01/2023",
-        "name": "neha",
-        "player": "Neha",
-        "role": "batsman",
-        "score": 30,
-        "team1": "India",
-        "team2": "Pakistan",
-        "wickets": 1
-    },
-    {
-        "date": "11/01/2023",
-        "name": "neha",
-        "player": "Neha",
-        "role": "batsman",
-        "score": 12,
-        "team1": "India",
-        "team2": "Australia",
         "wickets": 2
     },
     {
         "date": "03/03/2023",
-        "name": "neha",
-        "player": "Neha",
-        "role": "batsman",
-        "score": 23,
-        "team1": "India",
-        "team2": "Pakistan",
-        "wickets": 2
-    },
-    {
-        "date": "12/10/2023",
-        "name": "siddh",
-        "player": "Siddh",
-        "role": "batsman",
-        "score": 5,
-        "team1": "Pakistan",
-        "team2": "India",
-        "wickets": 0
-    },
-    {
-        "date": "13/02/2023",
         "name": "siddh",
         "player": "Siddh",
         "role": "bowler",
-        "score": 550,
+        "score": 23,
         "team1": "India",
-        "team2": "Australia",
+        "team2": "Pakistan",
         "wickets": 2
     },
     {
@@ -250,33 +70,33 @@
         "wickets": 2
     },
     {
-        "date": "03/03/2023",
+        "date": "13/02/2023",
         "name": "siddh",
         "player": "Siddh",
         "role": "bowler",
-        "score": 23,
+        "score": 550,
         "team1": "India",
-        "team2": "Pakistan",
+        "team2": "Australia",
         "wickets": 2
     },
     {
         "date": "12/10/2023",
-        "name": "saloni",
-        "player": "Saloni",
+        "name": "siddh",
+        "player": "Siddh",
         "role": "batsman",
-        "score": 102,
-        "team1": "India",
-        "team2": "Pakistan",
-        "wickets": 4
+        "score": 5,
+        "team1": "Pakistan",
+        "team2": "India",
+        "wickets": 0
     },
     {
-        "date": "01/02/2023",
+        "date": "02/02/2023",
         "name": "saloni",
         "player": "Saloni",
         "role": "bowler",
-        "score": 25,
+        "score": 205,
         "team1": "India",
-        "team2": "England",
+        "team2": "Pakistan",
         "wickets": 2
     },
     {
@@ -290,34 +110,24 @@
         "wickets": 2
     },
     {
-        "date": "02/02/2023",
+        "date": "01/02/2023",
         "name": "saloni",
         "player": "Saloni",
         "role": "bowler",
-        "score": 205,
+        "score": 25,
         "team1": "India",
-        "team2": "Pakistan",
+        "team2": "England",
         "wickets": 2
     },
     {
-        "date": "01/01/2023",
-        "name": "priya",
-        "player": "Priya",
+        "date": "12/10/2023",
+        "name": "saloni",
+        "player": "Saloni",
         "role": "batsman",
-        "score": 28,
-        "team1": "England",
-        "team2": "India",
-        "wickets": 1
-    },
-    {
-        "date": "11/03/2023",
-        "name": "priya",
-        "player": "Priya",
-        "role": "batsman",
-        "score": 48,
-        "team1": "Pakistan",
-        "team2": "Australia",
-        "wickets": 5
+        "score": 102,
+        "team1": "India",
+        "team2": "Pakistan",
+        "wickets": 4
     },
     {
         "date": "01/07/2023",
@@ -330,11 +140,131 @@
         "wickets": 9
     },
     {
+        "date": "11/03/2023",
+        "name": "priya",
+        "player": "Priya",
+        "role": "batsman",
+        "score": 48,
+        "team1": "Pakistan",
+        "team2": "Australia",
+        "wickets": 5
+    },
+    {
         "date": "01/01/2023",
+        "name": "priya",
+        "player": "Priya",
+        "role": "batsman",
+        "score": 28,
+        "team1": "England",
+        "team2": "India",
+        "wickets": 1
+    },
+    {
+        "date": "12/12/2023",
+        "name": "rudra",
+        "player": "Rudra",
+        "role": "bowler",
+        "score": 10,
+        "team1": "Pakistan",
+        "team2": "India",
+        "wickets": 0
+    },
+    {
+        "date": "03/02/2023",
+        "name": "rushil",
+        "player": "Rushil",
+        "role": "batsman",
+        "score": 303,
+        "team1": "England",
+        "team2": "India",
+        "wickets": 0
+    },
+    {
+        "date": "02/02/2023",
+        "name": "rushil",
+        "player": "Rushil",
+        "role": "batsman",
+        "score": 200,
+        "team1": "England",
+        "team2": "New Zealand",
+        "wickets": 0
+    },
+    {
+        "date": "01/02/2023",
+        "name": "rushil",
+        "player": "Rushil",
+        "role": "batsman",
+        "score": 33,
+        "team1": "England",
+        "team2": "Australia",
+        "wickets": 0
+    },
+    {
+        "date": "12/10/2023",
+        "name": "rushil",
+        "player": "Rushil",
+        "role": "batsman",
+        "score": 100,
+        "team1": "India",
+        "team2": "Pakistan",
+        "wickets": 1
+    },
+    {
+        "date": "13/02/2023",
+        "name": "ravi",
+        "player": "Ravi",
+        "role": "bowler",
+        "score": 550,
+        "team1": "India",
+        "team2": "Australia",
+        "wickets": 2
+    },
+    {
+        "date": "01/03/2023",
+        "name": "ravi",
+        "player": "Ravi",
+        "role": "batsman",
+        "score": 60,
+        "team1": "India",
+        "team2": "Australia",
+        "wickets": 3
+    },
+    {
+        "date": "01/01/2023",
+        "name": "ravi",
+        "player": "Ravi",
+        "role": "batsman",
+        "score": 50,
+        "team1": "India",
+        "team2": "Pakistan",
+        "wickets": 2
+    },
+    {
+        "date": "21/12/2023",
+        "name": "ravi",
+        "player": "raVi",
+        "role": "batsman",
+        "score": 120,
+        "team1": "India",
+        "team2": "England",
+        "wickets": 0
+    },
+    {
+        "date": "12/10/2023",
+        "name": "roshni",
+        "player": "Roshni",
+        "role": "bowler",
+        "score": 90,
+        "team1": "India",
+        "team2": "Pakistan",
+        "wickets": 5
+    },
+    {
+        "date": "01/11/2023",
         "name": "akshay",
         "player": "Akshay",
         "role": "batsman",
-        "score": 40,
+        "score": 49,
         "team1": "Pakistan",
         "team2": "India",
         "wickets": 2
@@ -350,63 +280,133 @@
         "wickets": 3
     },
     {
-        "date": "01/11/2023",
+        "date": "01/01/2023",
         "name": "akshay",
         "player": "Akshay",
         "role": "batsman",
-        "score": 49,
+        "score": 40,
         "team1": "Pakistan",
         "team2": "India",
         "wickets": 2
     },
     {
-        "date": "12/10/2023",
-        "name": "roshni",
-        "player": "Roshni",
-        "role": "bowler",
-        "score": 90,
+        "date": "05/02/2023",
+        "name": "arun",
+        "player": "Arun",
+        "role": "batsman",
+        "score": 60,
         "team1": "India",
-        "team2": "Pakistan",
+        "team2": "England",
         "wickets": 5
     },
     {
-        "date": "21/12/2023",
-        "name": "ravi",
-        "player": "raVi",
+        "date": "02/02/2023",
+        "name": "arun",
+        "player": "Arun",
         "role": "batsman",
-        "score": 120,
+        "score": 49,
+        "team1": "India",
+        "team2": "England",
+        "wickets": 6
+    },
+    {
+        "date": "01/02/2023",
+        "name": "arun",
+        "player": "Arun",
+        "role": "batsman",
+        "score": 45,
         "team1": "India",
         "team2": "England",
         "wickets": 0
     },
     {
-        "date": "01/01/2023",
-        "name": "ravi",
-        "player": "Ravi",
+        "date": "02/02/2023",
+        "name": "kiran",
+        "player": "Kiran",
         "role": "batsman",
-        "score": 50,
+        "score": 122,
+        "team1": "India",
+        "team2": "England",
+        "wickets": 2
+    },
+    {
+        "date": "01/03/2023",
+        "name": "kiran",
+        "player": "Kiran",
+        "role": "batsman",
+        "score": 10,
+        "team1": "Australia",
+        "team2": "India",
+        "wickets": 1
+    },
+    {
+        "date": "01/01/2023",
+        "name": "kiran",
+        "player": "Kiran",
+        "role": "batsman",
+        "score": 15,
+        "team1": "Pakistan",
+        "team2": "India",
+        "wickets": 2
+    },
+    {
+        "date": "11/02/2023",
+        "name": "olivia",
+        "player": "Olivia",
+        "role": "bowler",
+        "score": 203,
+        "team1": "Australia",
+        "team2": "England",
+        "wickets": 6
+    },
+    {
+        "date": "01/06/2023",
+        "name": "olivia",
+        "player": "Olivia",
+        "role": "bowler",
+        "score": 103,
+        "team1": "Australia",
+        "team2": "England",
+        "wickets": 4
+    },
+    {
+        "date": "01/02/2023",
+        "name": "olivia",
+        "player": "Olivia",
+        "role": "bowler",
+        "score": 23,
+        "team1": "Australia",
+        "team2": "England",
+        "wickets": 1
+    },
+    {
+        "date": "03/03/2023",
+        "name": "neha",
+        "player": "Neha",
+        "role": "batsman",
+        "score": 23,
         "team1": "India",
         "team2": "Pakistan",
         "wickets": 2
     },
     {
-        "date": "01/03/2023",
-        "name": "ravi",
-        "player": "Ravi",
+        "date": "11/01/2023",
+        "name": "neha",
+        "player": "Neha",
         "role": "batsman",
-        "score": 60,
-        "team1": "India",
-        "team2": "Australia",
-        "wickets": 3
-    },
-    {
-        "date": "13/02/2023",
-        "name": "ravi",
-        "player": "Ravi",
-        "role": "bowler",
-        "score": 550,
+        "score": 12,
         "team1": "India",
         "team2": "Australia",
         "wickets": 2
+    },
+    {
+        "date": "01/01/2023",
+        "name": "neha",
+        "player": "Neha",
+        "role": "batsman",
+        "score": 30,
+        "team1": "India",
+        "team2": "Pakistan",
+        "wickets": 1
     }
 ]
