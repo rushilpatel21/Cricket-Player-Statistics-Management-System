@@ -899,8 +899,8 @@ void number8() {
     }
 }
 
-void addinfoToJson(json& datasetJson, const std::string& name, const std::string& date, int score, int wickets,
-                   const std::string& role, const std::string& team1, const std::string& team2, const std::string& player) {
+void addinfoToJson(json& datasetJson, const string& name, const string& date, int score, int wickets,
+                   const string& role, const string& team1, const string& team2, const string& player) {
     json playerJson = {
         {"name", name},
         {"date", date},
@@ -930,7 +930,7 @@ void saveDatasetToJson() {
     }
 
     ofstream jsonFile("dataset.json");
-    jsonFile << std::setw(4) << datasetJson;  
+    jsonFile << setw(4) << datasetJson;  
     jsonFile.close();
 }
 
